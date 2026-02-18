@@ -9,7 +9,7 @@ class Display(ABC):
         self.formatter = formatter
 
     @abstractmethod
-    def display(self) -> str:
+    def display(self) -> None:
         pass
 
 
