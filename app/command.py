@@ -29,7 +29,7 @@ class PrintCommand(Command):
 
 
 class SerializerCommand(Command):
-    def __init__(self, serializer: Serializer, book: Book):
+    def __init__(self, serializer: Serializer, book: Book) -> None:
         self.serializer = serializer
         self.book = book
 

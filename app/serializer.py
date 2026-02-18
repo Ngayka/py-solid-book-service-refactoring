@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 
 class Serializer(ABC):
     @abstractmethod
-    def serialize(self, name, text):
+    def serialize(self, name: str, text: str) -> None:
         pass
 
 

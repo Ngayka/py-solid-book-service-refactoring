@@ -9,7 +9,7 @@ class Printer(ABC):
         self.formatter = formatter
 
     @abstractmethod
-    def print(self):
+    def print(self) -> None:
         pass
 
 

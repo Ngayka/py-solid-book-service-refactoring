@@ -14,7 +14,7 @@ class Display(ABC):
 
 
 class ConsoleDisplay(Display):
-    def __init__(self, book: Book, formatter: Formatter):
+    def __init__(self, book: Book, formatter: Formatter) -> None:
         super().__init__(book, formatter)
 
     def display(self) -> None:
@@ -22,7 +22,7 @@ class ConsoleDisplay(Display):
 
 
 class ReverseDisplay(Display):
-    def __init__(self, book: Book, formatter: Formatter):
+    def __init__(self, book: Book, formatter: Formatter) -> None:
         super().__init__(book, formatter)
 
     def display(self) -> None:
