@@ -16,7 +16,7 @@ class DisplayCommand(Command):
     def __init__(self, display: Display) -> None:
         self.display = display
 
-    def execute(self) -> str:
+    def execute(self) -> None | str:
         return self.display.display()
 
 
@@ -24,7 +24,7 @@ class PrintCommand(Command):
     def __init__(self, printer: Printer) -> None:
         self.printer = printer
 
-    def execute(self) -> None:
+    def execute(self) -> None | str:
         return self.printer.print()
 
 
@@ -33,5 +33,5 @@ class SerializerCommand(Command):
         self.serializer = serializer
         self.book = book
 
-    def execute(self) -> str:
+    def execute(self) -> None | str:
         return self.serializer.serialize(self.book.title, self.book.content)
